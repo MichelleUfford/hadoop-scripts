@@ -1,0 +1,37 @@
+-- This is an example of a PERSONAL Hive Configuration file
+-- Installation Instructions: 
+--     Download this file
+--     Copy this file to the same server you run Hive from
+--     Run this command to move/rename the file so Hive will recognize it
+--          mv example.hiverc ~/.hiverc
+
+-------------------
+-- Hive UDF JARs -- 
+-------------------
+-- these are for illustration purposes. You'll need to install the jar and update the path
+-- add jar /home/mufford/hive/jar/brickhouse-0.7.1-SNAPSHOT.jar;
+-- add jar /home/mufford/hive/jar/mufford-toolkit-0.1.jar;
+
+---------------
+-- Usability --
+--------------- 
+set hive.cli.print.current.db=true;
+set hive.cli.print.header=true;
+set hive.default.fileformat=ORC;
+set hive.support.concurrency=false;
+
+-----------------
+-- Performance --
+-----------------
+set hive.auto.convert.join=true;
+set hive.compute.query.using.stats=true;
+set hive.exec.parallel=true;
+set hive.execution.engine=tez;
+set hive.mapjoin.smalltable.filesize=50000000;
+set hive.stats.dbclass=fs;
+set hive.vectorized.execution.enabled=true;
+
+----------------
+-- Playground --
+----------------
+set hive.mapjoin.smalltable.filesize=50000000;
