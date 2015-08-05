@@ -27,7 +27,6 @@ set hive.auto.convert.join=true;
 set hive.compute.query.using.stats=true;
 set hive.exec.parallel=true;
 set hive.execution.engine=tez;
-set hive.mapjoin.smalltable.filesize=50000000;
 set hive.stats.dbclass=fs;
 set hive.vectorized.execution.enabled=true;
 
